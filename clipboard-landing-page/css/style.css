@@ -438,12 +438,13 @@ h3 {
   }
 }
 
-p {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 48rem;
+h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
-  color: hsl(201 11% 66% / var(--tw-text-opacity));
+  color: hsl(210 10% 33% / var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
@@ -546,6 +547,18 @@ p {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
+.right-\[50\%\] {
+  right: 50%;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -573,6 +586,24 @@ p {
   margin-bottom: 10rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
 .bg-lightBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(233 100% 69% / var(--tw-bg-opacity));
@@ -581,11 +612,6 @@ p {
 .bg-strongCyan {
   --tw-bg-opacity: 1;
   background-color: hsl(171 66% 44% / var(--tw-bg-opacity));
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pt-16 {
@@ -606,10 +632,17 @@ p {
   line-height: 2.25rem;
 }
 
+.text-grayishBlue {
+  --tw-text-opacity: 1;
+  color: hsl(201 11% 66% / var(--tw-text-opacity));
+}
+
 .section-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 72rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   text-align: center;
 }
 
@@ -663,6 +696,20 @@ p {
   opacity: 0.8;
 }
 
+.p-hero {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+  --tw-text-opacity: 1;
+  color: hsl(201 11% 66% / var(--tw-text-opacity));
+}
+
+.p-leading {
+  margin-bottom: 6rem;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+}
+
 body {
   background-image: url("../images/bg-header-desktop.png");
   background-repeat: no-repeat;
@@ -674,5 +721,37 @@ body {
 @media (max-width: 576px) {
   body {
     background-image: url("../images/bg-header-mobile.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:mb-60 {
+    margin-bottom: 15rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:space-x-32 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(8rem * var(--tw-space-x-reverse));
+    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 }

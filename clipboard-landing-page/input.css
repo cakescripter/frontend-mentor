@@ -6,13 +6,13 @@
   h3 {
     @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
   }
-  p {
-    @apply max-w-3xl mx-auto text-grayishBlue;
+  h5 {
+    @apply mb-2 text-2xl font-bold text-darkGrayishBlue;
   }
 }
 
 .section-container {
-  @apply max-w-6xl mx-auto text-center;
+  @apply max-w-6xl mx-auto text-center px-10;
 }
 
 .button-container {
@@ -21,6 +21,13 @@
 
 .download {
   @apply p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80;
+}
+
+.p-hero {
+  @apply max-w-3xl mx-auto text-grayishBlue;
+}
+.p-leading {
+  @apply mb-24 text-xl leading-9;
 }
 
 body {
