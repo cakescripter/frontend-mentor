@@ -2,7 +2,7 @@
 
 ### Clipboard landing page
 
-live preview: https://roaring-cheesecake-c5bb06.netlify.app
+live preview: https://spontaneous-nasturtium-a0083f.netlify.app
 
 ![Design preview for the Clipboard landing page coding challenge](clipboard-landing-page/design/desktop-preview.jpg)
 
