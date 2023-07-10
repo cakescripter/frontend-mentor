@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Clipboard landing page</title>
+  <title>Clipboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <!-- <style>
@@ -29,13 +29,14 @@
 </head>
 
 <body>
+
   <!-- Hero Section -->
   <section>
     <div class="section-container mb-40 pt-16">
       <img src="images/logo.svg" alt="" class="mx-auto my-16">
 
       <h3>A history of everything you copy</h3>
-      <p class="p-hero mb-10 text-2xl">
+      <p class="p-big mb-10">
         Clipboard allows you to track and organize everything you
         copy. Instantly access your clipboard on all your devices.
       </p>
@@ -49,11 +50,12 @@
       </div>
     </div>
   </section>
+
   <!-- Snippets Section -->
   <section>
     <div class="section-container my-20">
       <h3>Keep track of your snippets</h3>
-      <p class="p-hero p-leading">
+      <p class="p-leading mb-24">
         Clipboard instantly stores any item you copy in the cloud,
         meaning you can access your snippets immediately on all your
         devices. Our Mac and iOS apps will help you organize everything.
@@ -110,8 +112,9 @@
   <!-- Access Anywhere Section -->
   <section>
     <div class="section-container my-20">
+
       <h3>Access Clipboard anywhere</h3>
-      <p class="p-hero p-leading">Whether you’re on the go, or at your computer, you can access all your Clipboard
+      <p class="p-leading mb-24">Whether you’re on the go, or at your computer, you can access all your Clipboard
         snippets in a few simple clicks.</p>
       <img src="images/image-devices.png" alt="" class="mx-auto">
     </div>
@@ -121,54 +124,143 @@
   <!-- Supercharge Section -->
   <section>
     <div class="section-container my-20">
+
       <h3>Supercharge your workflow</h3>
+      <p class="p-leading mb-16">
+        We’ve got the tools to boost your productivity.
+      </p>
 
+      <!-- Items Container -->
+      <div class="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12">
+        <!-- 1 -->
+        <div class="flex flex-col items-center space-y-5">
+          <img src="images/icon-blacklist.svg" alt="" class="mb-6">
+          <h5>Create blacklists</h5>
+          <p class="max-w-md text-grayishBlue">
+            Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+          </p>
+        </div>
+        <!-- 2 -->
+        <div class="flex flex-col items-center space-y-5">
+          <img src="images/icon-text.svg" alt="" class="mb-6">
+          <h5>Plain text snippets</h5>
+          <p class="max-w-md text-grayishBlue">
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </div>
+        <!-- 3 -->
+        <div class="flex flex-col items-center space-y-5">
+          <img src="images/icon-preview.svg" alt="" class="mb-6">
+          <h5>Sneak preview</h5>
+          <p class="max-w-md text-grayishBlue">
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </div>
 
-      We’ve got the tools to boost your productivity.
-
-      <h3>Create blacklists</h3>
-
-      Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-
-      Plain text snippets
-
-      Remove unwanted formatting from copied text for a consistent look.
-
-      Sneak preview
-
-      Quick preview of all snippets on your Clipboard for easy access.
+        <!-- Items Container close -->
+      </div>
     </div>
 
   </section>
 
-  <!-- Logos -->
+  <!-- References Section -->
+  <section>
+    <div
+      class="flex flex-col md:flex-row items-center justify-between max-w-6xl px-10 mx-auto space-y-16 md:space-y-0 my-44">
+      <img src="images/logo-google.png" alt="">
+      <img src="images/logo-ibm.png" alt="">
+      <img src="images/logo-microsoft.png" alt="">
+      <img src="images/logo-hp.png" alt="">
+      <img src="images/logo-vector-graphics.png" alt="">
+    </div>
+  </section>
 
-  <!-- Devices -->
+  <!-- Bottom CTA Section -->
+  <section>
+    <div class="section-container my-20">
+      <h3>Clipboard for iOS and Mac OS</h3>
+      <p class="p-leading mb-10">
+        Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+        and you’re ready to start adding to your clipboard.
+      </p>
+
+      <!-- Button Container -->
+      <div>
+        <div class="button-container">
+          <button class="download bg-strongCyan">
+            Download for iOS
+          </button>
+          <button class="download bg-lightBlue">
+            Download for Mac
+          </button>
+        </div>
+      </div>
+
+      <!-- Section container close -->
+    </div>
+  </section>
 
   <!-- Footer -->
+  <footer class="bg-gray-50">
+    <div class="section-container">
 
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <!-- Img -->
+        <img src="images/logo.svg" alt="" class="scale-50">
+        <!-- Container for Menus & Socials -->
+        <div
+          class="flex flex-col md:flex-row items-center justify-between flex-1 mb-10 md:mb-0 space-y-6 md:space-y-0 text-grayishBlue">
+          <!-- Menus -->
+          <div class="flex flex-col md:flex-row space-y-4 md:ml-24 md:space-x-24 md:space-y-0">
+            <!-- 1 -->
+            <div class="flex flex-col space-y-4 text-center md:text-left">
+              <a href="#" class="hover:text-strongCyan">FAQs</a>
+              <a href="#" class="hover:text-strongCyan">Contact Us</a>
+            </div>
+            <!-- 2 -->
+            <div class="flex flex-col space-y-4 text-center md:text-left">
+              <a href="#" class="hover:text-strongCyan">Privacy Policy</a>
+              <a href="#" class="hover:text-strongCyan">Press Kit</a>
+            </div>
 
+            <!-- 3 -->
+            <div class="flex flex-col space-y-4 text-center md:text-left">
+              <a href="#" class="hover:text-strongCyan">Install Guide</a>
+            </div>
 
+            <!-- Menus close -->
+          </div>
 
-  Clipboard for iOS and Mac OS
+          <!-- Menu Container close -->
+        </div>
 
-  Available for free on the App Store. Download for Mac or iOS, sync with iCloud
-  and you’re ready to start adding to your clipboard.
+        <!-- Socials -->
+        <div class="flex justify-between w-32 py-1 mb-8">
+          <a href="#">
+            <img src="images/icon-facebook.svg" alt="" class="duration-200 ficon">
+          </a>
+          <a href="#">
+            <img src="images/icon-twitter.svg" alt="" class="duration-200 ficon">
+          </a>
+          <a href="#">
+            <img src="images/icon-instagram.svg" alt="" class="duration-200 ficon">
+          </a>
+        </div>
 
-  Download for iOS
-  Download for Mac
+        <!-- Flexbox close -->
+      </div>
+    </div>
 
-  FAQs
-  Contact Us
-  Privacy Policy
-  Press Kit
-  Install Guide
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Cakescripter</a>.
-    </p>
+    <!-- Credits -->
+    <div>
+      <p class="text-center md:text-right attribution text-darkGrayishBlue">Challenge by
+        <a class="hover:text-lightBlue"
+          href="https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9"
+          target="_blank">Frontend Mentor</a>.
+        Coded by <a class="hover:text-lightBlue"
+          href="https://www.frontendmentor.io/profile/cakescripter">Cakescripter</a>.
+      </p>
+    </div>
   </footer>
 </body>
 

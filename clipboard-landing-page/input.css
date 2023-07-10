@@ -23,11 +23,12 @@
   @apply p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80;
 }
 
-.p-hero {
-  @apply max-w-3xl mx-auto text-grayishBlue;
+.p-big {
+  @apply max-w-3xl mx-auto text-grayishBlue text-2xl leading-9;
 }
+
 .p-leading {
-  @apply mb-24 text-xl leading-9;
+  @apply max-w-3xl mx-auto text-grayishBlue text-xl leading-9;
 }
 
 body {
@@ -41,4 +42,9 @@ body {
   body {
     background-image: url("../images/bg-header-mobile.png");
   }
+}
+
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
 }
