@@ -617,10 +617,6 @@ video {
   max-width: 28rem;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -658,10 +654,6 @@ video {
 
 .pr-0 {
   padding-right: 0px;
-}
-
-.pl-0 {
-  padding-left: 0px;
 }
 
 .text-center {
