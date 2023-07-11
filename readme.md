@@ -10,7 +10,7 @@ live preview: https://spontaneous-nasturtium-a0083f.netlify.app
 
 ### 3-column preview card component
 
-live preview: https://splendid-gelato-73b6d7.netlify.app
+live preview: https://symphonious-lollipop-0e7809.netlify.app
 
 ![Design preview for the 3-column preview card component coding challenge](3-column-preview-card-component/design/desktop-preview.jpg)
 
