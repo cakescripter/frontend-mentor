@@ -422,6 +422,31 @@ video {
   display: none;
 }
 
+h5 {
+  position: absolute;
+  bottom: 1rem;
+  width: 13rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition-duration: 200ms;
+}
+
+.group:hover h5 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  h5 {
+    bottom: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -573,6 +598,10 @@ video {
   margin-bottom: 8rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -593,16 +622,16 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
 }
 
 .h-10 {
   height: 2.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-6xl {
@@ -623,6 +652,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -691,6 +724,101 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.btn {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: Alata;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
+
+.btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.item-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-container > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.item-container {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .item-container {
+    flex-direction: row;
+  }
+
+  .item-container > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .item {
+    width: 25%;
+  }
+}
+
+.item-gradient {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: transparent var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #111827 var(--tw-gradient-to-position);
+}
+
+.group:hover .item-gradient {
+  --tw-gradient-from: #f9fafb var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(249 250 251 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #fff var(--tw-gradient-to-position);
+  opacity: 0.7;
+}
+
 #hero {
   background-image: url("../images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
@@ -702,6 +830,12 @@ video {
     background-image: url("../images/mobile/image-hero.jpg");
     background-position: center;
   }
+}
+
+.group:hover .group-hover\:scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:border-b {
@@ -730,12 +864,24 @@ video {
     margin-top: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
