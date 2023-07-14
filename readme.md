@@ -11,6 +11,7 @@ live preview: https://symphonious-lollipop-0e7809.netlify.app
 ![Design preview](3-column-preview-card-component/design/desktop-preview.jpg)
 
 <hr>
+
 ## junior:
 
 ### Clipboard landing page
