@@ -1,7 +1,8 @@
 # Frontend Mentor
 
 <hr>
-## _newbies:_
+
+## newbies:
 
 ### 3-column preview card component
 
@@ -10,7 +11,7 @@ live preview: https://symphonious-lollipop-0e7809.netlify.app
 ![Design preview](3-column-preview-card-component/design/desktop-preview.jpg)
 
 <hr>
-## _junior:_
+## junior:
 
 ### Clipboard landing page
 
