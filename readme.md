@@ -32,7 +32,7 @@ live preview: https://gilded-rolypoly-06d9ed.netlify.app
 
 ### Testimonials grid section
 
-live preview: https://joyful-kringle-6a21e0.netlify.app
+live preview: https://deluxe-cheesecake-25a002.netlify.app
 
 ![Design preview for the Testimonials grid section coding challenge](testimonials-grid-section/design/desktop-preview.jpg)
 
