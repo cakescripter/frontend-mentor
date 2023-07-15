@@ -30,4 +30,8 @@ live preview: https://gilded-rolypoly-06d9ed.netlify.app
 
 <br>
 
+### Testimonials grid section
+
+![Design preview for the Testimonials grid section coding challenge](testimonials-grid-section/design/desktop-preview.jpg)
+
 TBA ; - D
