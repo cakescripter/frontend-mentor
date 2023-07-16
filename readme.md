@@ -36,4 +36,10 @@ live preview: https://deluxe-cheesecake-25a002.netlify.app
 
 ![Design preview for the Testimonials grid section coding challenge](testimonials-grid-section/design/desktop-preview.jpg)
 
+## intermediate:
+
+### Frontend Mentor - Shortly URL shortening API Challenge
+
+![Design preview for the Shortly URL shortening API coding challenge](url-shortening-api/design/desktop-preview.jpg)
+
 TBA ; - D
