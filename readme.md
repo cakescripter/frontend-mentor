@@ -3,13 +3,13 @@
 This repository is a collection of frontend challenges from Frontend Mentor. Frontend Mentor is a platform that offers various web development challenges to improve and showcase your frontend skills. All the code for each page is located in the "website" folder. I've used Tailwind CSS to build all the pages.
 To view the live demo of any challenge, simply click [here](https://example.com)
 
-### Challenges
-
 If you wish to explore the source code and review how each challenge was built, click on the respective _Source Code_ link.
 
 Enjoy!
 
 <br>
+
+### Challenges
 
 **3-column preview card component**
 
