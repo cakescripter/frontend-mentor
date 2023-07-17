@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Shortly</title>
@@ -26,24 +27,104 @@
 </head>
 
 <body>
+  <!-- Nav Container -->
+  <nav class="relative container mx-auto p-6">
+    <!-- Flex Container For All Items -->
+    <div class="flex items-center justify-between">
+      <!-- Flex Left -->
+      <div class="flex items-center space-x-20">
+        <!-- Logo -->
+        <img src="images/logo.svg" alt="">
+        <!-- Menu -->
+        <div class="hidden space-x-8 font-bold lg:flex">
+          <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Features</a>
+          <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Pricing</a>
+          <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Resources</a>
+        </div>
+      </div>
+      <!-- Flex Right -->
+      <div class="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex">
+        <div class="hover:text-veryDarkViolet">Login</div>
+        <a href="#" class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70">Sign Up</a>
+      </div>
+      <!-- @hamburger -->
+    </div>
+    <!-- @mobile -->
+  </nav>
 
-  Features
-  Pricing
-  Resources
+  <!-- Hero Section -->
+  <section id="hero">
+    <!-- Hero Container -->
+    <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
+      <!-- Text -->
+      <div class="flex flex-col space-y-10 mb-44 lg:mt-16 mg:w-1/2 xl:mb;52">
+        <h1 class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left">
+          More than just shorter links
+        </h1>
+        <p class="text-2xl text-center text-gray lg:max-w-md lg:text-left">
+          Build your brand’s recognition and get detailed insights
+          on how your links are performing.
+        </p>
+        <a href="#" class="py-5 px-10 text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70">Get
+          Started</a>
+      </div>
+      <!-- Image -->
+      <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
+        <img src="images/illustration-working.svg" alt="">
+      </div>
 
-  Login
-  Sign Up
+    </div>
+  </section>
 
-  More than just shorter links
+  <!-- Shorten Section -->
+  <section id="shorten" class="relative bg-darkGray">
+    <!-- Shorten Container -->
+    <div class="max-w-4xl mx-auto p-6 space-y-6">
+      <!-- Form -->
+      <form id="link-form"
+        class="relative flex flex-col w-full p-10 mt-20 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3">
+        <input type="text" id="link-input"
+          class="flex-1 p-3 border-2 rounded-lg placeholder-veryDarkBlue focus:outline-none"
+          placeholder="Shorten a link here...">
+        <button class="px-10 py-3 text-white bg-cyan rounded-lg hover:bg-lightCyan focus:outline-none md:py-2">Shorten
+          It!</button>
+      </form>
+      <!-- Link 1 -->
+      <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
+        <p class="font-bold text-center text-veryDarkViolet md:text-left">https://frontendmentor.io</p>
+        <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
+          <div class="font-bold text-cyan">
+            https://rel.ink/k4IKyk
+          </div>
+          <button class="p-2 px-8 text-white bg-cyan rounded-lg hover:bg-lightCyan focus:outline-none">Copy</button>
+        </div>
+      </div>
+      <!-- Link 2 -->
+      <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
+        <p class="font-bold text-center text-veryDarkViolet md:text-left">https://frontendmentor.io</p>
+        <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
+          <div class="font-bold text-cyan">
+            https://rel.ink/k4IKyk
+          </div>
+          <button
+            class="p-2 px-8 text-white bg-darkViolet rounded-lg hover:bg-opacity-80 focus:outline-none">Copy</button>
+        </div>
+      </div>
+      <!-- Link 3 -->
+      <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
+        <p class="font-bold text-center text-veryDarkViolet md:text-left">https://frontendmentor.io</p>
+        <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
+          <div class="font-bold text-cyan">
+            https://rel.ink/k4IKyk
+          </div>
+          <button class="p-2 px-8 text-white bg-cyan rounded-lg hover:bg-lightCyan focus:outline-none">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Build your brand’s recognition and get detailed insights
-  on how your links are performing.
 
-  Get Started
 
-  Shorten a link here...
-
-  Shorten It!
 
   Advanced Statistics
 
