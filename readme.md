@@ -10,17 +10,10 @@ If you wish to explore the source code and review how each challenge was built, 
 
 ### Challenges
 
-**3-column preview card component**
+**Loopstudios landing page**
 
-[Source Code](https://github.com/cakescripter/frontend-mentor/tree/main/websites/3-column-preview-card-component)
-![Design preview](websites/3-column-preview-card-component/design/desktop-preview.jpg)
-
-<br>
-
-**Testimonials grid section**
-
-[Source Code](https://github.com/cakescripter/frontend-mentor/tree/main/websites/testimonials-grid-section)
-![Design preview](websites/testimonials-grid-section/design/desktop-preview.jpg)
+[Source Code](https://github.com/cakescripter/frontend-mentor/tree/main/websites/loopstudios-landing-page)
+![Design preview](websites/loopstudios-landing-page/design/desktop-preview.jpg)
 
 <br>
 
@@ -31,7 +24,14 @@ If you wish to explore the source code and review how each challenge was built, 
 
 <br>
 
-**Loopstudios landing page**
+**Testimonials grid section**
 
-[Source Code](https://github.com/cakescripter/frontend-mentor/tree/main/websites/loopstudios-landing-page)
-![Design preview](websites/loopstudios-landing-page/design/desktop-preview.jpg)
+[Source Code](https://github.com/cakescripter/frontend-mentor/tree/main/websites/testimonials-grid-section)
+![Design preview](websites/testimonials-grid-section/design/desktop-preview.jpg)
+
+**3-column preview card component**
+
+[Source Code](https://github.com/cakescripter/frontend-mentor/tree/main/websites/3-column-preview-card-component)
+![Design preview](websites/3-column-preview-card-component/design/desktop-preview.jpg)
+
+<br>
