@@ -6,18 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="script.js" defer></script>
     <title>Frontend Mentor</title>
 </head>
 
 <body class="bg-gray-300">
     <!-- Global -->
     <div class="container mx-auto max-w-full p-2 lg:p-10">
+
+        <div class="filter-bar">
+            <input type="checkbox" id="html-checkbox">
+            <label for="html-checkbox">HTML</label>
+
+            <input type="checkbox" id="css-checkbox">
+            <label for="css-checkbox">CSS</label>
+
+            <input type="checkbox" id="js-checkbox">
+            <label for="js-checkbox">JS</label>
+
+            <input type="checkbox" id="api-checkbox">
+            <label for="api-checkbox">API</label>
+
+            <button onclick="filterImages()">Apply Filters</button>
+        </div>
+
         <!-- Grid -->
         <div class="grid gap-6 text-white grid-cols-1 lg:grid-cols-3 lg:grid-rows-5">
 
 
             <!-- Box 4 -->
-            <div class="flex justify-center items-center overflow-hidden rounded-xl bg-purple-900">
+            <div class="flex justify-center items-center overflow-hidden rounded-xl bg-purple-900" data-tags="html css">
                 <a href="websites/testimonials-grid-section/index.html" class="project-item">
                     <img src="websites/testimonials-grid-section/design/desktop-design.jpg"
                         class="duration-200 hover:scale-150 rounded-xl" alt="Projekt 1">
@@ -27,7 +45,8 @@
 
 
             <!-- Box 2 -->
-            <div class="flex justify-center items-center overflow-hidden rounded-xl lg:row-span-3 bg-yellow-500">
+            <div class="flex justify-center items-center overflow-hidden rounded-xl lg:row-span-3 bg-yellow-500"
+                data-tags="html css">
                 <a href="websites/clipboard-landing-page/index.html" class="project-item">
                     <img src="websites/clipboard-landing-page/design/desktop-design.jpg"
                         class="duration-200 hover:scale-150 rounded-xl" alt="Projekt 1">
@@ -35,7 +54,8 @@
             </div>
 
             <!-- Box 5 -->
-            <div class="flex justify-center items-center overflow-hidden rounded-xl bg-pink-900 lg:row-span-2">
+            <div class="flex justify-center items-center overflow-hidden rounded-xl bg-pink-900 lg:row-span-2"
+                data-tags="html css js api">
                 <a href="websites/url-shortening-api/index.html" class="project-item">
                     <img src="websites/url-shortening-api/design/desktop-design.jpg"
                         class="duration-200 hover:scale-150 rounded-xl" alt="Projekt 1">
@@ -43,7 +63,8 @@
             </div>
 
             <!-- Box 3 -->
-            <div class="flex justify-center items-center overflow-hidden rounded-xl lg:row-span-2">
+            <div class="flex justify-center items-center overflow-hidden rounded-xl lg:row-span-2"
+                data-tags="html css js">
                 <a href="websites/loopstudios-landing-page/index.html" class="project-item">
                     <img src="websites/loopstudios-landing-page/design/desktop-design.jpg"
                         class="duration-200 hover:scale-150 rounded-xl" alt="Projekt 1">
@@ -51,7 +72,7 @@
             </div>
 
             <!-- Box 1 -->
-            <div class="flex justify-center items-center overflow-hidden rounded-xl bg-cyan-900">
+            <div class="flex justify-center items-center overflow-hidden rounded-xl bg-cyan-900" data-tags="html css">
                 <a href="websites/3-column-preview-card-component/index.html" class="project-item">
                     <img src="websites/3-column-preview-card-component/design/desktop-design.jpg"
                         class="duration-200 hover:scale-150 rounded-xl" alt="Projekt 1">
