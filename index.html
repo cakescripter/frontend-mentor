@@ -6,32 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="checkboxes.css">
     <script src="script.js" defer></script>
     <title>Frontend Mentor</title>
 </head>
 
 <body class="bg-gray-300">
     <!-- Global -->
-    <div class="container mx-auto max-w-full p-2 lg:p-10">
+    <div class="container mx-auto max-w-full p-2 lg:p-10 bg-blue-200">
+        <div class="flex max-w-full items-center justify-left content-between">
+            <div class="filter-bar max-w-5xl text-5xl space-x-4">
+                <div class="flex items-center p-10">
+                    <span class="mr-2 text-gray-700 pl-24">Select:</span>
 
-        <div class="filter-bar">
-            <input type="checkbox" id="html-checkbox">
-            <label for="html-checkbox">HTML</label>
+                    <label class="inline-flex items-center px-3">
+                        <input type="checkbox" id="css-checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2 text-cyan-800">HTML+CSS</span>
+                    </label>
 
-            <input type="checkbox" id="css-checkbox">
-            <label for="css-checkbox">CSS</label>
+                    <label class="inline-flex items-center px-3">
+                        <input type="checkbox" id="js-checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2 text-yellow-600">JS</span>
+                    </label>
 
-            <input type="checkbox" id="js-checkbox">
-            <label for="js-checkbox">JS</label>
-
-            <input type="checkbox" id="api-checkbox">
-            <label for="api-checkbox">API</label>
-
-            <button onclick="filterImages()">Apply Filters</button>
+                    <label class="inline-flex items-center px-3">
+                        <input type="checkbox" id="api-checkbox" class="form-checkbox h-5 w-5">
+                        <span class="ml-2 text-purple-800">API</span>
+                    </label>
+                </div>
+            </div>
         </div>
 
         <!-- Grid -->
-        <div class="grid gap-6 text-white grid-cols-1 lg:grid-cols-3 lg:grid-rows-5">
+        <div class="grid gap-6 text-white grid-cols-1 lg:grid-cols-3 lg:grid-rows-3">
 
 
             <!-- Box 4 -->
