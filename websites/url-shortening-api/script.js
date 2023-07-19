@@ -1,6 +1,16 @@
 const form = document.querySelector("#link-form");
 const linkList = document.querySelector("#link-list");
+
+const btn = document.getElementById('menu-btn')
+const menu = document.getElementById('menu')
+
 let isOdd = true;
+
+function navToggle() {
+  btn.classList.toggle('open')
+  menu.classList.toggle('flex')
+  menu.classList.toggle('hidden')
+}
 
 function isURL(str) {
   const pattern = new RegExp(
@@ -89,5 +99,5 @@ async function fetchshrco(url) {
   return shortened;
 }
 
-// Event Listener
 form.addEventListener("submit", handleFormSubmission);
+btn.addEventListener('click', navToggle);
