@@ -34,7 +34,21 @@ function createLinkElement(link, shortenedLink) {
     </div>
   `;
 
+  const copyButton = newLinkElement.querySelector(".copy");
+  copyButton.addEventListener("click", () => {
+    copyToClipboard(shortenedLink);
+    copyButton.textContent = "Copied!";
+  });
+
   return newLinkElement;
+}
+
+async function copyToClipboard(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch (error) {
+    console.error("Copy to clipboard failed:", error);
+  }
 }
 
 function addLinkToLinkList(linkElement) {
