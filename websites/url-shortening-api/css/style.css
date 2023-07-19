@@ -422,6 +422,20 @@ video {
   display: none;
 }
 
+button {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -939,27 +953,6 @@ video {
 .placeholder-yellow-500::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(234 179 8 / var(--tw-placeholder-opacity));
-}
-
-npm@layer base {
-  button {
-    border-radius: 0.5rem;
-  }
-  button {
-    padding: 0.5rem;
-  }
-  button {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  button {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-  button:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
 }
 
 .link-container {
